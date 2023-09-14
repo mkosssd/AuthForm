@@ -16,53 +16,55 @@
     </head>
     <body class="bg-dark">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
                 <div class="container">
-                    <a class="navbar-brand fw-bold" href="#">Auth Page</a>
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="logo.svg" alt="">
+                        Anywhere App
+                    </a>
                 </div>
             </nav>
         </header>
+
         <main>
+            
             <div class="container my-5">
-                <div class=" col-xl-6 col-lg-6 col-md-10 mx-auto col-sm-12 border border-2 border-black p-4  rounded  bg-white">
+                <p class="fw-bold h6 my-0 text-secondary">WELCOME BACK</p>
+
+                <h1 class="display-5 fw-bold text-white my-0">
+                    Account Login
+                    <span class="text-primary fw-bolder display-3">.</span>
+                </h1>
+                <p class="h6 text-secondary my-2">Don't have an Account? <a class="text-decoration-none" href="/">Create New Account</a></p>
+
+                <div class=" col-xl-6 col-lg-6 col-md-10 col-sm-12 my-5  rounded"  id="box">
+
                     <form id="form" onsubmit="formOp(event,'login')">
-                        <span class="small fw-semibold" id="error"></span>
-                        <div class="col-sm-10 mx-auto">
+                        
+                        
+                        <div class="col-11">
                             <label for="email" class="col-sm-5 col-form-label fw-semibold">Email</label>
                             <input
                             type="email"
-                            class="form-control"
+                            class="form-control rounded-4 py-3"
                             id="Email"
                             placeholder="Enter Email"
-                            oninput="validator('Email')"
+                            required
                             >
-                            <span class="small fw-semibold" id="errorEmail"></span>
+                            <span class="small fw-semibold text-danger" id="error"></span>
                         </div>
-                        <div class="col-sm-10 mx-auto">
-                            <label for="inputPassword" class="col-sm-5 col-form-label fw-semibold">Password</label>
-                            <input
-                            type="password"
-                            class="form-control"
-                            id="inputPassword"
-                            placeholder="Enter Password"
-                            oninput="validator('inputPassword')"
-                            minlength="8"
-                            >
-                            <span class="small fw-semibold" id="errorinputPassword"></span>
+                     
+                        <div class="col-11 justify-content-between d-flex my-4 px-4">
+                            <a class="btn btn-secondary fw-bold col-5 my-3  py-3 rounded-pill px-2" href="/">Change Method</a>
+                            <button class="btn btn-primary col-5 my-3 rounded-pill py-3 px-2 fw-bold" type="submit" id="signup">Next</button>
                         </div>
-                        <div class="col-12 justify-content-center d-flex">
-                            <button class="btn btn-primary col-3 my-3 mx-5" type="submit">Login</button>
-                            <a class="btn btn-primary my-3 col-3 mx-5" href="/index.html">Sign Up</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="container">
-                <div class=" col-xl-6 col-lg-6 col-md-10 mx-auto col-sm-12 border border-2 border-black p-4  rounded  bg-white d-none" id="userDetail">
-                    <div id="name"></div>
-                    <div id="mail"></div>
+
+                    </form>
+
                 </div>
+
             </div>
+            
         </main>
         <footer>
             <!-- place footer here --></footer>
