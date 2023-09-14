@@ -16,7 +16,7 @@ form .form-control:focus {
 }
 
 body {
-  background: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?w=1380&t=st=1694676015~exp=1694676615~hmac=aad9c884a01f1f0f60e33372aad4bb68d13045519c6b2336e413c856ecf8ae63");
+  background: url("./background.avif");
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
