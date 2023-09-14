@@ -26,5 +26,5 @@ if (user === null) {
 const logout = () => {
 	localStorage.removeItem("user");
 
-	location.href = "/";
+	location.href = "/"; 	
 };
